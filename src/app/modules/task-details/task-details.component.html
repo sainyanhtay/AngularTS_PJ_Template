@@ -1,0 +1,26 @@
+<p style="margin-top: 5%;">task-details works!</p>
+
+
+<nav class="nav_user_header navbar navbar-expand-lg navbar-light" style="background-color: #C5C9B8;">
+    <div>
+        <ul class="ul_list_right navbar-nav ml-auto">
+            <li class="active">
+                <a (click)="click('CheckList')">CheckList</a>
+            </li>
+
+            <li style="margin-left: 20%;">
+                <a (click)="click('Status')">Status</a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
+
+
+<div id="toDo">
+    <h3>{{routeData | json}}</h3>
+</div>
+
+<h1 *ngIf="checkListActive">CheckList</h1>
+<h1 *ngIf="statusActive">Status</h1>
